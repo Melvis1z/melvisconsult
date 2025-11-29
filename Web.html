@@ -1,0 +1,411 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="Melvis Consult — Estate, academic and car services in Ghana. Professional research, land services, and vehicle solutions." />
+  <meta name="keywords" content="Melvis Consult,estate services,academic consulting,car rentals,car sales,Ghana" />
+  <meta name="author" content="Melvis Consult" />
+
+  <title>Melvis Consult — Estate • Academic • Car Services</title>
+
+  <!-- Social preview -->
+  <meta property="og:title" content="Melvis Consult — Estate • Academic • Car Services">
+  <meta property="og:description" content="Trusted estate, academic and automotive experts in Ghana since 2018.">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1485217988980-11786ced9454?auto=format&fit=crop&w=1600&q=80">
+  <meta property="og:type" content="website">
+
+  <!-- Tailwind CSS (utility) -->
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous" defer></script>
+
+  <!-- AOS -->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+  <style>
+    :root{
+      --primary: #0b64b7; /* professional blue */
+      --primary-dark: #094f93;
+      --muted: #6b7280;
+      --bg: #f7fafc;
+    }
+    html,body{height:100%}
+    body{
+      font-family:'Poppins',sans-serif;
+      background:var(--bg);
+      color:#0f172a;
+      scroll-behavior:smooth;
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+    }
+
+    /* Header / logo */
+    header.site-header{
+      background: linear-gradient(90deg,var(--primary),var(--primary-dark));
+      color:white;
+    }
+
+    /* Nav */
+    nav.site-nav{
+      position:sticky; top:0; z-index:70;
+      background:rgba(255,255,255,0.96);
+      box-shadow:0 2px 8px rgba(15,23,42,0.04);
+      backdrop-filter: blur(4px);
+    }
+    nav.site-nav a{transition:color .18s ease}
+    nav.site-nav a.active{color:var(--primary); font-weight:600}
+
+    /* Hero */
+    .hero{
+      background:
+        linear-gradient(rgba(4,9,22,0.25), rgba(4,9,22,0.35)),
+        url('https://images.unsplash.com/photo-1485217988980-11786ced9454?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
+      color:#fff;
+    }
+
+    /* Cards */
+    .service-card{transition:transform .28s ease,box-shadow .28s ease}
+    .service-card:hover{transform:translateY(-8px);box-shadow:0 20px 50px rgba(2,6,23,0.12)}
+
+    /* form */
+    .input, .textarea{
+      background:#fff;border:1px solid #e6eef6;padding:.75rem .9rem;border-radius:.6rem;width:100%;
+    }
+    .btn{background:var(--primary);color:#fff;padding:.75rem 1rem;border-radius:.6rem;font-weight:600}
+    .btn:hover{background:var(--primary-dark)}
+    footer{background:#071024;color:#cbd5e1}
+    .sr-only{position:absolute;left:-9999px}
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="site-header py-6">
+    <div class="max-w-6xl mx-auto px-4 flex items-center justify-between">
+      <div>
+        <!-- Text-based logo -->
+        <a href="#hero" class="text-white no-underline inline-flex items-center gap-3">
+          <div class="bg-white rounded-full p-2" style="width:48px;height:48px;display:flex;align-items:center;justify-content:center;">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3 12h18" stroke="#0b64b7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M6 5h12v14H6z" stroke="#0b64b7" stroke-width="2" stroke-linejoin="round"/></svg>
+          </div>
+          <div>
+            <div class="text-lg font-bold">Melvis Consult</div>
+            <div class="text-xs opacity-90">Estate • Academic • Car Services</div>
+          </div>
+        </a>
+      </div>
+
+      <div class="hidden md:flex items-center gap-6 text-white opacity-95">
+        <a href="mailto:melvisj4@gmail.com" class="text-sm hover:underline"><i class="fas fa-envelope mr-2"></i> melvisj4@gmail.com</a>
+        <a href="tel:+233543598656" class="text-sm hover:underline"><i class="fas fa-phone-alt mr-2"></i> +233 543 598 656</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Navigation -->
+  <nav class="site-nav py-3">
+    <div class="max-w-6xl mx-auto px-4 flex items-center justify-between">
+      <div class="flex items-center gap-6 text-sm font-medium">
+        <a class="nav-link text-gray-700" href="#hero">Home</a>
+        <a class="nav-link text-gray-700" href="#about">About</a>
+        <a class="nav-link text-gray-700" href="#services">Services</a>
+        <a class="nav-link text-gray-700" href="#portfolio">Portfolio</a>
+        <a class="nav-link text-gray-700" href="#contact">Contact</a>
+      </div>
+
+      <div class="hidden md:block">
+        <a href="#contact" class="inline-flex items-center gap-2 px-4 py-2 rounded-md" style="background:var(--primary);color:#fff">Get in Touch <i class="fas fa-arrow-right"></i></a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section id="hero" class="hero py-28 md:py-36 text-center">
+    <div class="max-w-4xl mx-auto px-4" data-aos="zoom-in">
+      <h1 class="text-3xl md:text-5xl font-extrabold leading-tight">Trusted Consulting for Land, Research & Vehicles</h1>
+      <p class="mt-4 text-lg md:text-xl opacity-90">Professional, ethical, and reliable services to help individuals and organisations achieve their goals.</p>
+
+      <div class="mt-8 flex justify-center gap-4" data-aos="fade-up" data-aos-delay="140">
+        <a class="btn inline-flex items-center gap-2" href="#contact"><i class="fas fa-paper-plane"></i> Contact Us</a>
+        <a class="px-4 py-2 rounded-md bg-white text-gray-900 inline-flex items-center gap-2" href="#services">Explore Services</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="py-16 bg-white" data-aos="fade-up">
+    <div class="max-w-5xl mx-auto px-4 text-center">
+      <h2 class="text-3xl font-bold mb-4 text-gray-800">About Melvis Consult</h2>
+      <p class="text-gray-700 leading-relaxed">
+        Melvis Consult provided multidisciplinary professional services in real estate, academic research support, and automotive solutions.
+        Since 2018 we have helped clients across Ghana with accurate, timely and ethical delivery — from surveying and land registration to thesis support and vehicle sourcing.
+      </p>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services" class="py-16 bg-gray-50">
+    <div class="max-w-6xl mx-auto px-4">
+      <h3 class="text-3xl font-bold mb-8 text-center text-gray-800" data-aos="zoom-in">Our Services</h3>
+
+      <div class="grid md:grid-cols-3 gap-8">
+        <article class="service-card bg-white rounded-2xl overflow-hidden shadow-sm" data-aos="fade-up" data-aos-delay="40">
+          <img src="https://images.unsplash.com/photo-1505692794400-9ba1b1b1f8b4?auto=format&fit=crop&w=1200&q=80" alt="Estate Services" class="w-full h-44 object-cover">
+          <div class="p-6">
+            <i class="fas fa-map-marked-alt text-primary text-2xl mb-3" style="color:var(--primary)"></i>
+            <h4 class="text-xl font-semibold mb-2">Estate Services</h4>
+            <p class="text-gray-600">Land sales & purchases, building rentals, surveying, and land registration with due diligence and verification.</p>
+          </div>
+        </article>
+
+        <article class="service-card bg-white rounded-2xl overflow-hidden shadow-sm" data-aos="fade-up" data-aos-delay="120">
+          <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1200&q=80" alt="Academic Services" class="w-full h-44 object-cover">
+          <div class="p-6">
+            <i class="fas fa-book text-2xl mb-3" style="color:var(--primary)"></i>
+            <h4 class="text-xl font-semibold mb-2">Academic Consulting</h4>
+            <p class="text-gray-600">Assignments, dissertations, literature reviews, statistical analysis (SPSS, Stata, Python) and thesis support.</p>
+          </div>
+        </article>
+
+        <article class="service-card bg-white rounded-2xl overflow-hidden shadow-sm" data-aos="fade-up" data-aos-delay="200">
+          <img src="https://images.unsplash.com/photo-1542367597-3a6a0d8a3e9d?auto=format&fit=crop&w=1200&q=80" alt="Car Services" class="w-full h-44 object-cover">
+          <div class="p-6">
+            <i class="fas fa-car text-2xl mb-3" style="color:var(--primary)"></i>
+            <h4 class="text-xl font-semibold mb-2">Car Sales & Rentals</h4>
+            <p class="text-gray-600">Verified sourcing, competitive pricing, short-term and long-term rentals for personal and business needs.</p>
+          </div>
+        </article>
+      </div>
+
+      <div class="mt-10 text-center text-sm text-gray-600">Other services include property background checks, project support, and capacity-building workshops.</div>
+    </div>
+  </section>
+
+  <!-- PORTFOLIO -->
+  <section id="portfolio" class="py-16 bg-white" data-aos="fade-up">
+    <div class="max-w-6xl mx-auto px-4">
+      <h3 class="text-3xl font-bold mb-6 text-center text-gray-800">Selected Work & Testimonials</h3>
+
+      <div class="grid md:grid-cols-2 gap-8 mb-8">
+        <div class="bg-gray-50 rounded-xl p-6 shadow-sm" data-aos="fade-right">
+          <h4 class="font-semibold mb-2">Sorghum Resilience Study — Upper West Region</h4>
+          <p class="text-gray-700">Field and literature research on indigenous crops with policy recommendations for smallholder resilience.</p>
+          <p class="mt-3 text-sm text-gray-500">Oct 2024</p>
+        </div>
+
+        <div class="bg-gray-50 rounded-xl p-6 shadow-sm" data-aos="fade-left">
+          <h4 class="font-semibold mb-2">University Thesis Support</h4>
+          <p class="text-gray-700">Editing, analysis, and formatting for postgraduate theses with hands-on statistical support.</p>
+          <p class="mt-3 text-sm text-gray-500">Multiple students — positive feedback on quality and timeliness.</p>
+        </div>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-6">
+        <blockquote class="p-6 bg-white rounded-xl shadow-sm" data-aos="fade-up">
+          <p class="text-gray-700">"Thorough, reliable and professional." </p>
+          <footer class="mt-3 text-sm text-gray-500">— Prof. A. Mensah</footer>
+        </blockquote>
+        <blockquote class="p-6 bg-white rounded-xl shadow-sm" data-aos="fade-up" data-aos-delay="80">
+          <p class="text-gray-700">"Excellent research and timely delivery."</p>
+          <footer class="mt-3 text-sm text-gray-500">— K. Adjei</footer>
+        </blockquote>
+        <blockquote class="p-6 bg-white rounded-xl shadow-sm" data-aos="fade-up" data-aos-delay="160">
+          <p class="text-gray-700">"Seamless property registration handling."</p>
+          <footer class="mt-3 text-sm text-gray-500">— L. Owusu</footer>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="py-16 bg-gradient-to-b from-blue-700 to-blue-600 text-white">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="grid md:grid-cols-2 gap-8 items-start">
+        <div data-aos="fade-right">
+          <h3 class="text-3xl font-bold mb-4">Get in Touch</h3>
+          <p class="mb-4">For enquiries, quotes or project discussions — we respond promptly.</p>
+          <p class="mb-2"><i class="fas fa-phone-alt mr-2"></i> <a href="tel:+233543598656" class="underline">+233 (0) 543 598 656</a></p>
+          <p class="mb-2"><i class="fab fa-whatsapp mr-2"></i> <a href="https://wa.me/233598655277" target="_blank" rel="noopener" class="underline">WhatsApp +233 598 655 277</a></p>
+          <p class="mb-2"><i class="fas fa-envelope mr-2"></i> melvisj4@gmail.com</p>
+          <p class="mb-2"><i class="fas fa-map-marker-alt mr-2"></i> Okorase Housing, Ghana</p>
+        </div>
+
+        <div data-aos="fade-left">
+          <!-- Contact Form -->
+          <form id="contactForm" class="bg-white p-6 rounded-xl shadow-lg text-gray-800" aria-labelledby="contactTitle">
+            <div id="formMessage" class="hidden mb-4 rounded-md p-3 text-sm"></div>
+
+            <label class="block mb-3">
+              <span class="sr-only">Your name</span>
+              <input id="from_name" name="from_name" class="input" type="text" placeholder="Your full name" required>
+            </label>
+
+            <label class="block mb-3">
+              <span class="sr-only">Your email</span>
+              <input id="reply_to" name="reply_to" class="input" type="email" placeholder="Your email address" required>
+            </label>
+
+            <label class="block mb-3">
+              <input id="subject" name="subject" class="input" type="text" placeholder="Subject" required>
+            </label>
+
+            <label class="block mb-4">
+              <textarea id="message" name="message" class="textarea" placeholder="Your message" required></textarea>
+            </label>
+
+            <div class="flex items-center gap-3">
+              <button type="submit" class="btn inline-flex items-center gap-2"><i class="fas fa-paper-plane"></i> Send Message</button>
+              <button type="button" id="mailFallback" class="px-4 py-2 border rounded-md bg-white text-gray-700 hover:bg-gray-100">Open email</button>
+            </div>
+
+            <p class="text-xs mt-3 text-gray-200">We aim to respond within 24–48 hours. For urgent matters call +233 543 598 656.</p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="py-6 mt-8">
+    <div class="max-w-6xl mx-auto px-4 text-center">
+      <div class="mb-3">
+        <a href="#" class="mx-2 text-gray-200 hover:text-white"><i class="fab fa-facebook"></i></a>
+        <a href="#" class="mx-2 text-gray-200 hover:text-white"><i class="fab fa-instagram"></i></a>
+        <a href="#" class="mx-2 text-gray-200 hover:text-white"><i class="fab fa-linkedin"></i></a>
+      </div>
+      <p class="text-sm text-gray-200">&copy; 2018–2025 Melvis Consult. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- AOS JS -->
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+  <!-- EmailJS (optional) -->
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2.6.4/dist/email.min.js"></script>
+
+  <script>
+    AOS.init({ duration: 700, once: true, easing: 'ease-out-cubic' });
+
+    // NAV active highlight
+    const navLinks = document.querySelectorAll('.nav-link');
+    const sections = Array.from(document.querySelectorAll('section, #hero'));
+    function onScroll(){
+      const pos = window.scrollY + 120;
+      sections.forEach(sec => {
+        if(!sec.id) return;
+        const top = sec.offsetTop;
+        const bottom = top + sec.offsetHeight;
+        const link = document.querySelector('.nav-link[href="#' + sec.id + '"]');
+        if(pos >= top && pos < bottom){
+          navLinks.forEach(l => l.classList.remove('active'));
+          if(link) link.classList.add('active');
+        }
+      });
+    }
+    window.addEventListener('scroll', onScroll, { passive: true });
+    onScroll();
+
+    // smooth scroll with offset for sticky nav
+    navLinks.forEach(l => {
+      l.addEventListener('click', e => {
+        e.preventDefault();
+        const id = l.getAttribute('href').slice(1);
+        const tgt = document.getElementById(id);
+        if(!tgt) return;
+        const top = tgt.getBoundingClientRect().top + window.pageYOffset - 90;
+        window.scrollTo({ top, behavior: 'smooth' });
+      });
+    });
+
+    // CONTACT FORM: EmailJS / Formspree / mailto fallback
+    const EMAILJS_USER_ID = 'YOUR_EMAILJS_USER_ID';        // <-- replace
+    const EMAILJS_SERVICE_ID = 'YOUR_EMAILJS_SERVICE_ID';  // <-- replace
+    const EMAILJS_TEMPLATE_ID = 'YOUR_EMAILJS_TEMPLATE_ID';// <-- replace
+    const FORMSPREE_URL = ''; // <-- optional: paste your Formspree endpoint
+
+    const contactForm = document.getElementById('contactForm');
+    const formMessage = document.getElementById('formMessage');
+
+    function showMessage(type, text){
+      formMessage.classList.remove('hidden','bg-green-50','text-green-800','bg-red-50','text-red-800');
+      if(type === 'success'){
+        formMessage.classList.add('bg-green-50','text-green-800');
+      } else {
+        formMessage.classList.add('bg-red-50','text-red-800');
+      }
+      formMessage.innerText = text;
+    }
+
+    if (EMAILJS_USER_ID && EMAILJS_USER_ID !== 'YOUR_EMAILJS_USER_ID') {
+      try { emailjs.init(EMAILJS_USER_ID); } catch(e){ console.warn('EmailJS init failed', e); }
+    }
+
+    contactForm.addEventListener('submit', function(e){
+      e.preventDefault();
+      const name = document.getElementById('from_name').value.trim();
+      const email = document.getElementById('reply_to').value.trim();
+      const subject = document.getElementById('subject').value.trim();
+      const message = document.getElementById('message').value.trim();
+
+      if(!name || !email || !subject || !message){
+        showMessage('error','Please complete all fields before sending.');
+        return;
+      }
+
+      // EmailJS path
+      if(EMAILJS_USER_ID && EMAILJS_USER_ID !== 'YOUR_EMAILJS_USER_ID' &&
+         EMAILJS_SERVICE_ID && EMAILJS_TEMPLATE_ID){
+        const params = { from_name: name, reply_to: email, subject, message };
+        emailjs.send(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, params)
+          .then(() => {
+            showMessage('success','Message sent — thank you! We will reply shortly.');
+            contactForm.reset();
+          }).catch(err => {
+            console.error('EmailJS error', err);
+            showMessage('error','Could not send via EmailJS. Use the Open email fallback.');
+          });
+        return;
+      }
+
+      // Formspree path
+      if(FORMSPREE_URL){
+        fetch(FORMSPREE_URL, {
+          method: 'POST',
+          headers: { 'Accept': 'application/json', 'Content-Type': 'application/json' },
+          body: JSON.stringify({ name, email, subject, message })
+        }).then(res => {
+          if(res.ok){
+            showMessage('success','Message sent — thank you! We will reply shortly.');
+            contactForm.reset();
+          } else {
+            showMessage('error','Formspree returned an error. Use the Open email fallback.');
+          }
+        }).catch(err => {
+          console.error('Formspree error', err);
+          showMessage('error','Network error while sending. Use the Open email fallback.');
+        });
+        return;
+      }
+
+      // Mailto fallback
+      const mailto = `mailto:melvisj4@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent('Name: '+name+'\\nEmail: '+email+'\\n\\n'+message)}`;
+      showMessage('success','Opening your default mail app (fallback).');
+      setTimeout(()=> window.location.href = mailto, 700);
+    });
+
+    document.getElementById('mailFallback').addEventListener('click', () => {
+      const name = document.getElementById('from_name').value.trim();
+      const email = document.getElementById('reply_to').value.trim();
+      const subject = document.getElementById('subject').value.trim() || 'Website enquiry';
+      const message = document.getElementById('message').value.trim() || '';
+      const mailto = `mailto:melvisj4@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent('Name: '+name+'\\nEmail: '+email+'\\n\\n'+message)}`;
+      window.location.href = mailto;
+    });
+  </script>
+</body>
+</html>
