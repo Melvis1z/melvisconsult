@@ -1,0 +1,717 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Melvis Academic Consult — Quality Research. Professional Guidance. Timely Delivery.</title>
+
+  <!-- Primary Meta -->
+  <meta name="description" content="Melvis Academic Consult — Thesis & dissertation coaching, proposal development, data analysis, editing & proofreading. Instant response from Okorase State Housing, Koforidua." />
+  <meta name="keywords" content="Melvis Academic Consult, thesis help, dissertation support, proposal writing, data analysis, proofreading, Ghana, Koforidua" />
+  <meta name="author" content="Melvis Academic Consult / Elvis Mensah" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Melvis Academic Consult — Academic Research Consulting" />
+  <meta property="og:description" content="Quality Research. Professional Guidance. Timely Delivery. Fast, confidential and expert academic support." />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1200&q=80" />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <!-- JSON-LD structured data -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"ProfessionalService",
+    "name":"Melvis Academic Consult",
+    "description":"Academic research consulting: thesis/dissertation coaching, proposal development, data analysis, editing & proofreading. Instant response via WhatsApp.",
+    "telephone":["+233598655277","+233543598656"],
+    "email":"melvisongod@gmail.com",
+    "address":{
+      "@type":"PostalAddress",
+      "streetAddress":"Okorase State Housing",
+      "addressLocality":"Koforidua",
+      "addressRegion":"Eastern Region",
+      "addressCountry":"GH"
+    },
+    "url":"https://yourdomain.example"
+  }
+  </script>
+
+  <!-- Favicon placeholder -->
+  <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+
+  <!-- Fonts & Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" crossorigin="anonymous">
+
+  <style>
+    :root{
+      --navy:#03142e;
+      --navy-2:#072046;
+      --gold:#c69b3d;
+      --muted:#6b7280;
+      --bg:#f6f8fb;
+      --white:#ffffff;
+      --accent:#059669;
+      --maxw:1180px;
+      --radius:12px;
+    }
+
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0; font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, Arial;
+      background:var(--bg); color:#07122a; -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale; line-height:1.45;
+    }
+    a{ color:inherit; text-decoration:none }
+    img{ max-width:100%; display:block }
+
+    /* container */
+    .container{ max-width:var(--maxw); margin:0 auto; padding:0 20px; }
+
+    /* Header/topbar */
+    header.site-header{ background:linear-gradient(180deg,var(--navy),var(--navy-2)); color:var(--white); }
+    .topbar{ display:flex; justify-content:space-between; gap:12px; align-items:center; padding:14px 0; }
+    .brand{ display:flex; gap:12px; align-items:center }
+    .brand img{ width:48px; height:48px; border-radius:8px; object-fit:cover }
+    .brand h1{ margin:0; font-family:'Playfair Display', serif; font-size:1.05rem; letter-spacing:0.2px; color:var(--gold) }
+    .quick-contacts{ display:flex; gap:8px; align-items:center; flex-wrap:wrap; font-size:0.95rem; color:rgba(255,255,255,.95) }
+    .contact-pill{ display:inline-flex; gap:8px; align-items:center; background:rgba(255,255,255,.06); padding:8px 12px; border-radius:999px; border:1px solid rgba(255,255,255,.04); transition: all 0.3s ease }
+    .contact-pill:hover{ background:rgba(255,255,255,.12); transform:translateY(-2px) }
+
+    /* main nav */
+    nav.main-nav{ position:sticky; top:0; z-index:999; backdrop-filter:blur(6px); background:linear-gradient(180deg, rgba(3,20,46,0.96), rgba(7,32,70,0.92)); border-top:1px solid rgba(255,255,255,0.02); box-shadow:0 4px 20px rgba(0,0,0,0.1) }
+    .nav-inner{ display:flex; gap:20px; align-items:center; justify-content:space-between; padding:12px 0; }
+    .nav-links{ display:flex; gap:16px; align-items:center }
+    .nav-links a{ color:rgba(255,255,255,.95); font-weight:600; padding:8px 10px; border-radius:8px; transition:all 0.3s ease }
+    .nav-links a:hover{ background:rgba(255,255,255,0.1); color:var(--gold); transform:translateY(-2px) }
+    .cta-primary{ background:var(--gold); color:var(--navy); padding:10px 14px; border-radius:10px; font-weight:700; box-shadow:0 8px 26px rgba(6,18,40,0.25); transition:all 0.3s ease }
+    .cta-primary:hover{ transform:translateY(-3px); box-shadow:0 12px 32px rgba(198,155,61,0.4) }
+    .burger{ display:none; background:none; border:0; color:var(--white); font-size:1.1rem; cursor:pointer }
+
+    /* hero */
+    .hero{ padding:72px 0 48px; background:linear-gradient(135deg, rgba(3,20,46,0.88), rgba(7,32,70,0.88)), url('https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1800&q=80') center/cover fixed; color:white }
+    .hero-inner{ display:flex; gap:28px; align-items:center; justify-content:space-between; flex-wrap:wrap; padding:42px 0 }
+    .hero-left{ flex:1 1 540px; min-width:280px }
+    .kicker{ display:inline-block; font-size:.9rem; background:rgba(255,255,255,.1); color:rgba(255,255,255,.95); padding:8px 12px; border-radius:999px; margin-bottom:16px; backdrop-filter:blur(8px); border:1px solid rgba(255,255,255,.15) }
+    .hero-title{ font-family:'Playfair Display', serif; font-size:2.1rem; line-height:1.15; margin-bottom:12px }
+    .hero-sub{ font-size:1.02rem; color:rgba(255,255,255,.92); margin-bottom:18px; max-width:58ch }
+    .hero-actions{ display:flex; gap:12px; flex-wrap:wrap; align-items:center }
+    .btn{ display:inline-flex; align-items:center; gap:10px; padding:12px 16px; border-radius:10px; font-weight:700; cursor:pointer; border:0; transition:all 0.3s ease }
+    .btn:hover{ transform:translateY(-3px) }
+    .btn-ghost{ background:transparent; color:white; border:1px solid rgba(255,255,255,.2) }
+    .btn-ghost:hover{ background:rgba(255,255,255,.1); border-color:rgba(255,255,255,.3) }
+    .btn-ws{ background:#25d366; color:white; box-shadow:0 10px 30px rgba(37,211,102,.2) }
+    .btn-ws:hover{ box-shadow:0 14px 36px rgba(37,211,102,.35) }
+
+    /* hero card */
+    .hero-card{ width:360px; min-width:260px; background:linear-gradient(180deg,#fff,#fbfdff); color:#07122a; border-radius:16px; padding:18px; box-shadow:0 20px 50px rgba(2,6,23,.18); border:1px solid rgba(255,255,255,.2) }
+    .hero-card h4{ margin:0 0 8px; font-size:1.02rem }
+    .contact-row{ display:flex; gap:10px; align-items:center; margin-bottom:10px; transition:all 0.3s ease; padding:8px; border-radius:8px }
+    .contact-row:hover{ background:rgba(198,155,61,0.05); transform:translateX(5px) }
+    .contact-row a{ color:var(--navy-2); font-weight:600 }
+
+    /* sections */
+    .section{ padding:56px 0 }
+    .section .section-head{ text-align:center; margin-bottom:24px }
+    .section .section-title{ font-family:'Playfair Display', serif; color:var(--navy-2); font-size:1.6rem }
+    .cards{ display:grid; grid-template-columns:repeat(3,1fr); gap:20px; margin-top:18px }
+    .card{ background:white; border-radius:var(--radius); padding:20px; box-shadow:0 10px 30px rgba(2,6,23,0.06); transition: all .3s ease; border:1px solid rgba(0,0,0,0.03) }
+    .card:hover{ transform:translateY(-8px); box-shadow:0 28px 60px rgba(2,6,23,0.14); border-color:var(--gold) }
+    .card h3{ margin-top:0; color:var(--navy-2) }
+    .feature-list{ list-style:none; padding-left:0; margin:12px 0 0; color:var(--muted); font-size:.95rem }
+    .feature-list li{ margin:8px 0; display:flex; gap:10px; align-items:flex-start }
+
+    /* Value strip */
+    .value-strip{ background:linear-gradient(90deg, rgba(6,18,40,1), rgba(7,32,70,0.96)); color:white; padding:22px; border-radius:12px; display:flex; gap:20px; align-items:center; justify-content:space-between; margin-top:22px; border:1px solid rgba(255,255,255,0.05) }
+    .value-items{ display:flex; gap:18px; flex-wrap:wrap }
+
+    /* contact grid */
+    .contact-grid{ display:grid; grid-template-columns:1fr 420px; gap:20px; align-items:start }
+    .contact-card{ background:white; padding:22px; border-radius:12px; box-shadow:0 16px 40px rgba(2,6,23,.06); border:1px solid rgba(0,0,0,0.03) }
+    label{ display:block; font-weight:600; margin-bottom:6px; font-size:.95rem }
+    input, textarea, select{ width:100%; padding:12px 14px; border-radius:8px; border:1px solid #e6e8ee; font-size:1rem; background:#fff; transition:all 0.3s ease; font-family:inherit }
+    input:focus, textarea:focus, select:focus{ outline:none; border-color:var(--gold); box-shadow:0 0 0 3px rgba(198,155,61,0.1) }
+    textarea{ min-height:140px; resize:vertical }
+    .form-row{ display:grid; grid-template-columns:1fr 1fr; gap:12px }
+    .submit-row{ display:flex; gap:12px; align-items:center; margin-top:12px; flex-wrap:wrap }
+
+    /* Success/Error Messages */
+    .form-message{ padding:12px 16px; border-radius:8px; margin-top:12px; font-size:0.95rem; animation:slideIn 0.3s ease }
+    .form-message.success{ background:#d1fae5; color:#065f46; border:1px solid #a7f3d0 }
+    .form-message.error{ background:#fee2e2; color:#991b1b; border:1px solid #fecaca }
+    @keyframes slideIn{ from{opacity:0; transform:translateY(-10px)} to{opacity:1; transform:translateY(0)} }
+
+    /* Loading Spinner */
+    .spinner{ display:inline-block; width:16px; height:16px; border:2px solid rgba(255,255,255,0.3); border-top-color:white; border-radius:50%; animation:spin 0.8s linear infinite }
+    @keyframes spin{ to{transform:rotate(360deg)} }
+
+    /* footer */
+    footer{ margin-top:40px; padding:30px 0; background:#041028; color:rgba(255,255,255,.85) }
+    footer .foot-inner{ display:flex; gap:20px; justify-content:space-between; align-items:center; flex-wrap:wrap }
+
+    /* floating actions */
+    .floating-actions{ position:fixed; right:20px; bottom:20px; display:flex; flex-direction:column; gap:12px; z-index:1200 }
+    .floating-btn{ width:56px; height:56px; border-radius:999px; display:inline-flex; align-items:center; justify-content:center; color:white; box-shadow:0 10px 30px rgba(2,6,23,.18); text-decoration:none; transition:all 0.3s ease }
+    .floating-btn:hover{ transform:translateY(-5px) scale(1.1); box-shadow:0 15px 40px rgba(2,6,23,.25) }
+    .floating-btn.call{ background:#0ea5a4 }
+    .floating-btn.ws{ background:#25d366 }
+    .floating-btn.mail{ background:#2563eb }
+
+    /* Testimonial Section */
+    .testimonials{ background:linear-gradient(135deg, #f8fafc, #e2e8f0); padding:48px 0; border-radius:12px; margin:32px 0 }
+    .testimonial-card{ background:white; padding:24px; border-radius:12px; box-shadow:0 8px 24px rgba(0,0,0,0.06); margin:16px 0 }
+    .testimonial-text{ font-style:italic; color:var(--muted); margin-bottom:16px }
+    .testimonial-author{ font-weight:700; color:var(--navy-2) }
+
+    /* Stats Section */
+    .stats-grid{ display:grid; grid-template-columns:repeat(4,1fr); gap:20px; margin:32px 0 }
+    .stat-card{ text-align:center; padding:24px; background:white; border-radius:12px; box-shadow:0 8px 24px rgba(0,0,0,0.06); transition:all 0.3s ease }
+    .stat-card:hover{ transform:translateY(-8px); box-shadow:0 16px 40px rgba(0,0,0,0.12) }
+    .stat-number{ font-size:2.5rem; font-weight:700; color:var(--gold); font-family:'Playfair Display', serif }
+    .stat-label{ color:var(--muted); font-size:0.95rem; margin-top:8px }
+
+    /* responsive */
+    @media (max-width:1024px){
+      .cards{ grid-template-columns:repeat(2,1fr) }
+      .hero-card{ width:320px }
+      .contact-grid{ grid-template-columns:1fr }
+      .stats-grid{ grid-template-columns:repeat(2,1fr) }
+    }
+    @media (max-width:720px){
+      .nav-links{ display:none; flex-direction:column; position:absolute; top:100%; left:0; right:0; background:var(--navy); padding:20px; box-shadow:0 8px 24px rgba(0,0,0,0.2) }
+      .nav-links.active{ display:flex }
+      .burger{ display:block }
+      .hero-inner{ flex-direction:column; align-items:stretch }
+      .cards{ grid-template-columns:1fr }
+      .topbar{ flex-direction:column; align-items:flex-start; gap:10px }
+      .hero-title{ font-size:1.75rem }
+      .stats-grid{ grid-template-columns:1fr }
+      .value-strip{ flex-direction:column; text-align:center }
+    }
+
+    /* reduced motion */
+    @media (prefers-reduced-motion: reduce){ *{ transition:none !important; animation:none !important; scroll-behavior:auto !important } }
+
+    /* reveal */
+    .reveal{ opacity:0; transform:translateY(10px); transition:opacity .6s ease, transform .6s ease }
+    .reveal.visible{ opacity:1; transform:none }
+
+    /* accessibility focus */
+    :focus{ outline: 3px solid rgba(6, 95, 70, 0.2); outline-offset:3px }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header class="site-header" role="banner" aria-label="Melvis Academic Consult header">
+    <div class="container topbar">
+      <div class="brand" style="align-items:center">
+        <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&w=200&q=80" alt="Melvis Academic Consult logo" />
+        <div>
+          <h1>Melvis Academic Consult</h1>
+          <div style="font-size:0.88rem; color:rgba(255,255,255,.85)">Quality Research. Professional Guidance. Timely Delivery.</div>
+        </div>
+      </div>
+
+      <div class="quick-contacts" aria-hidden="false">
+        <div class="contact-pill" title="WhatsApp">
+          <i class="fab fa-whatsapp" style="color:#25d366"></i>
+          <a href="https://wa.me/233598655277?text=Hello%20Melvis%20Academic%20Consult%2C%20I%20need%20urgent%20academic%20help." target="_blank" rel="noopener noreferrer">+233 59 865 5277</a>
+        </div>
+
+        <div class="contact-pill" title="Call">
+          <i class="fas fa-phone"></i>
+          <a href="tel:+233543598656" aria-label="Call Melvis Academic Consult">+233 54 359 8656</a>
+        </div>
+
+        <div class="contact-pill" title="Email">
+          <i class="fas fa-envelope"></i>
+          <a href="mailto:melvisongod@gmail.com">melvisongod@gmail.com</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main nav -->
+    <nav class="main-nav" role="navigation" aria-label="Main Navigation">
+      <div class="container nav-inner">
+        <div style="display:flex;align-items:center;gap:12px">
+          <button id="burger" class="burger" aria-expanded="false" aria-label="Open menu"><i class="fas fa-bars"></i></button>
+          <a href="#" class="brand small" style="display:flex;align-items:center;gap:10px">
+            <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&w=80&q=60" alt="logo small" style="width:36px;height:36px;border-radius:6px;"/>
+            <span style="font-weight:700;color:var(--gold)">Melvis Academic</span>
+          </a>
+        </div>
+
+        <div class="nav-links" id="navLinks" role="menubar" aria-label="Primary">
+          <a href="#hero" role="menuitem">Home</a>
+          <a href="#services" role="menuitem">Services</a>
+          <a href="#why" role="menuitem">Why Choose Us</a>
+          <a href="#about" role="menuitem">About</a>
+          <a href="#contact" role="menuitem">Contact</a>
+          <a href="https://wa.me/233598655277?text=Hello%20Melvis%20Academic%20Consult%2C%20I%20need%20urgent%20help." target="_blank" rel="noopener noreferrer" class="cta-primary">Instant WhatsApp</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Main -->
+  <main id="maincontent">
+    <!-- HERO -->
+    <section id="hero" class="hero" aria-label="Intro">
+      <div class="container hero-inner">
+        <div class="hero-left reveal">
+          <div class="kicker">Fast • Confidential • Professional</div>
+          <h2 class="hero-title">Melvis Academic Consult — Your partner for thesis, dissertations & research success</h2>
+          <p class="hero-sub">End-to-end academic services: proposal development, data analysis (SPSS/STATA/NVivo), literature review, proofreading and formatting. We prioritize confidentiality and deliver fast — instant response available via WhatsApp and phone.</p>
+
+          <div class="hero-actions">
+            <a class="btn btn-ws" href="https://wa.me/233598655277?text=Hello%20Melvis%20Academic%20Consult%2C%20I%20need%20help%20with%20my%20thesis." target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp"></i> WhatsApp Now</a>
+            <a class="btn btn-ghost" href="tel:+233543598656"><i class="fas fa-phone"></i> Call +233 54 359 8656</a>
+            <a class="btn" href="#contact"><i class="fas fa-envelope"></i> Send Email</a>
+          </div>
+
+          <div style="margin-top:16px; color:rgba(255,255,255,.85); font-size:0.95rem">
+            <strong>Location:</strong> Okorase State Housing, Eastern Region — Koforidua
+          </div>
+        </div>
+
+        <aside class="hero-card reveal" aria-labelledby="hero-card-heading">
+          <h4 id="hero-card-heading">Instant Response Options</h4>
+          <p>Choose an option below and we will reply quickly.</p>
+
+          <div class="contact-row">
+            <i class="fab fa-whatsapp" style="color:#25d366"></i>
+            <div>
+              <div style="font-weight:700"><a href="https://wa.me/233598655277?text=Hello%20Melvis%20Academic%20Consult%2C%20I%20need%20urgent%20assistance." target="_blank" rel="noopener noreferrer">WhatsApp: +233 59 865 5277</a></div>
+              <div style="font-size:0.9rem;color:var(--muted)">Tap to message — preset message ready</div>
+            </div>
+          </div>
+
+          <div class="contact-row">
+            <i class="fas fa-phone"></i>
+            <div>
+              <div style="font-weight:700"><a href="tel:+233543598656">Call: +233 54 359 8656</a></div>
+              <div style="font-size:0.9rem;color:var(--muted)">Quick voice consultation</div>
+            </div>
+          </div>
+
+          <div class="contact-row">
+            <i class="fas fa-envelope"></i>
+            <div>
+              <div style="font-weight:700"><a href="mailto:melvisongod@gmail.com">Email: melvisongod@gmail.com</a></div>
+              <div style="font-size:0.9rem;color:var(--muted)">Attach brief + documents</div>
+            </div>
+          </div>
+
+          <div style="margin-top:12px">
+            <a class="btn btn-ws" href="https://wa.me/233598655277?text=Hello%20Melvis%20Academic%20Consult%2C%20I%20need%20an%20urgent%20quote." target="_blank" rel="noopener noreferrer"><i class="fas fa-bolt"></i> Instant Quote</a>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="section container">
+      <div class="stats-grid reveal">
+        <div class="stat-card">
+          <div class="stat-number">500+</div>
+          <div class="stat-label">Projects Completed</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">98%</div>
+          <div class="stat-label">Success Rate</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">24hr</div>
+          <div class="stat-label">Average Response</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">8+</div>
+          <div class="stat-label">Years Experience</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="section container" aria-labelledby="services-heading">
+      <div class="section-head">
+        <div class="section-title" id="services-heading">Our Core Services</div>
+        <div style="color:var(--muted); margin-top:10px; max-width:720px; margin-left:auto; margin-right:auto; text-align:center">
+          We deliver tailored research support for students, scholars and institutions — fast, confidential and academically rigorous.
+        </div>
+      </div>
+
+      <div class="cards reveal" id="services-cards">
+        <div class="card">
+          <h3>Thesis & Dissertation Coaching</h3>
+          <p>From topic selection to defense preparation — supervision, timelines and milestone tracking.</p>
+          <ul class="feature-list">
+            <li><i class="fas fa-check" style="color:var(--gold)"></i> Proposal development</li>
+            <li><i class="fas fa-check" style="color:var(--gold)"></i> Methodology & design</li>
+            <li><i class="fas fa-check" style="color:var(--gold)"></i> Defense preparation</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3>Proofreading & Academic Editing</h3>
+          <p>Language polish, structural edits, referencing (APA/MLA/Chicago) and formatting.</p>
+          <ul class="feature-list">
+            <li><i class="fas fa-check" style="color:var(--gold)"></i> Grammar & clarity</li>
+            <li><i class="fas fa-check" style="color:var(--gold)"></i> Formatting & references</li>
+            <li><i class="fas fa-check" style="color:var(--gold)"></i> Plagiarism guidance</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3>Data Analysis & Visualization</h3>
+          <p>SPSS, STATA, R, Python, SAS, NVivo, EViews and Excel — quantitative & qualitative analysis with clear interpretation.</p>
+          <ul class="feature-list">
+            <li><i class="fas fa-check" style="color:var(--gold)"></i> Descriptive & inferential stats</li>
+            <li><i class="fas fa-check" style="color:var(--gold)"></i> Tables & charts</li>
+            <li><i class="fas fa-check" style="color:var(--gold)"></i> Report writing</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3>Research Proposal Development</h3>
+          <p>Problem-driven proposals tailored to institutional guidelines and funding calls.</p>
+          <ul class="feature-list">
+            <li><i class="fas fa-check" style="color:var(--gold)"></i> Literature gap mapping</li>
+            <li><i class="fas fa-check" style="color:var(--gold)"></i> Clear objectives & methods</li>
+            <li><i class="fas fa-check" style="color:var(--gold)"></i> Budget & timeline guidance</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3>Academic Workshops & Training</h3>
+          <p>Workshops on research methods, academic writing, referencing and data handling for institutions and groups.</p>
+          <ul class="feature-list">
+            <li><i class="fas fa-check" style="color:var(--gold)"></i> Custom syllabi</li>
+            <li><i class="fas fa-check" style="color:var(--gold)"></i> Practical labs</li>
+            <li><i class="fas fa-check" style="color:var(--gold)"></i> Certificates</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3>Consultancy for Institutions</h3>
+          <p>Curriculum development, research project management and capacity building for universities & NGOs.</p>
+          <ul class="feature-list">
+            <li><i class="fas fa-check" style="color:var(--gold)"></i> Program design</li>
+            <li><i class="fas fa-check" style="color:var(--gold)"></i> Monitoring & evaluation</li>
+            <li><i class="fas fa-check" style="color:var(--gold)"></i> Grant support</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why choose us -->
+    <section id="why" class="container section" aria-labelledby="why-heading">
+      <div class="section-head">
+        <div class="section-title" id="why-heading">Why Choose Melvis Academic Consult</div>
+      </div>
+
+      <div class="value-strip reveal" role="region" aria-label="Value proposition">
+        <div>
+          <strong style="font-size:1.05rem">Instant Response • Academic Rigor • Confidential</strong>
+          <div style="color:rgba(255,255,255,.85); margin-top:6px">We combine experienced supervisors with fast, client-first communication — ideal for tight deadlines.</div>
+        </div>
+
+        <div class="value-items" style="color:rgba(255,255,255,.95)">
+          <div style="text-align:center"><div style="font-weight:700">Turnaround</div><div style="color:rgba(255,255,255,.85)">Same-day responses</div></div>
+          <div style="text-align:center"><div style="font-weight:700">Confidentiality</div><div style="color:rgba(255,255,255,.85)">Secure handling</div></div>
+          <div style="text-align:center"><div style="font-weight:700">Quality</div><div style="color:rgba(255,255,255,.85)">Academic standards</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials container reveal">
+      <div class="section-head">
+        <div class="section-title">What Our Clients Say</div>
+      </div>
+      <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(300px,1fr)); gap:20px">
+        <div class="testimonial-card">
+          <div class="testimonial-text">"Melvis Academic helped me complete my thesis on time with excellent data analysis. Their SPSS support was invaluable!"</div>
+          <div class="testimonial-author">— Sarah A., MBA Graduate</div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-text">"Professional, fast and confidential. The proposal development service helped me secure funding for my research."</div>
+          <div class="testimonial-author">— Dr. Kwame O., PhD Candidate</div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-text">"Outstanding editing service! They transformed my dissertation into publication-ready quality. Highly recommend!"</div>
+          <div class="testimonial-author">— Grace M., MSc Graduate</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section container" aria-labelledby="about-heading">
+      <div class="section-head">
+        <div class="section-title" id="about-heading">About Melvis Academic Consult</div>
+      </div>
+
+      <div style="display:grid; grid-template-columns:1fr 360px; gap:20px; align-items:start">
+        <div class="reveal">
+          <p style="color:var(--muted); max-width:70ch">Melvis Academic Consult is a Ghana-based academic research consultancy led by Elvis Mensah (MBA Finance, FMVA®,Business Intelligence & Analytics, Data Anotation). We specialize in thesis and dissertation coaching, proposal development, data analysis, and academic editing. We serve students, researchers and institutions across Ghana and beyond — offering confidentiality, academic rigor and fast response times.</p>
+
+          <h4 style="margin-top:18px">Elvis Mensah • Lead Consultant</h4>
+          <p style="color:var(--muted)">Experienced researcher & thesis supervisor supporting undergraduate to PhD candidates with proven results.</p>
+        </div>
+
+        <aside class="hero-card contact-card reveal" aria-label="Contact details">
+          <h4 style="margin-top:0">Contact & Office</h4>
+          <p style="margin:6px 0 10px; color:var(--muted)">Okorase State Housing, Eastern Region — Koforidua</p>
+
+          <p style="margin:6px 0"><strong>WhatsApp</strong><br><a href="https://wa.me/233598655277?text=Hello%20Melvis%20Academic%20Consult" target="_blank" rel="noopener noreferrer">+233 59 865 5277</a></p>
+          <p style="margin:6px 0"><strong>Phone</strong><br><a href="tel:+233543598656">+233 54 359 8656</a></p>
+          <p style="margin:6px 0"><strong>Email</strong><br><a href="mailto:melvisongod@gmail.com">melvisongod@gmail.com</a></p>
+
+          <p style="margin-top:12px; font-size:.95rem; color:var(--muted)">Office hours: Mon–Fri 9am–6pm • Sat 10am–2pm</p>
+          <div style="margin-top:12px">
+            <a class="btn btn-ws" href="https://wa.me/233598655277?text=Hello%20Melvis%20Academic%20Consult%2C%20I%20need%20assistance." target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp"></i> Message Now</a>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section id="contact" class="section container" aria-labelledby="contact-heading">
+      <div class="section-head">
+        <div class="section-title" id="contact-heading">Get in touch — Instant Response</div>
+        <div style="color:var(--muted); margin-top:10px; text-align:center">Leave a short message or start a chat via WhatsApp for fastest replies.</div>
+      </div>
+
+      <div class="contact-grid reveal">
+        <form id="contactForm" class="contact-card" aria-label="Contact form" novalidate>
+          <div style="display:flex; gap:12px; margin-bottom:12px">
+            <div style="flex:1">
+              <label for="fullname">Full name *</label>
+              <input id="fullname" name="fullname" type="text" required placeholder="Your full name" />
+            </div>
+            <div style="flex:1">
+              <label for="emailaddr">Email *</label>
+              <input id="emailaddr" name="email" type="email" required placeholder="you@example.com" />
+            </div>
+          </div>
+
+          <div style="margin-bottom:12px">
+            <label for="service">Service of interest</label>
+            <select id="service" name="service">
+              <option>Thesis & Dissertation Coaching</option>
+              <option>Proofreading & Editing</option>
+              <option>Data Analysis</option>
+              <option>Research Proposal</option>
+              <option>Workshop/Training</option>
+              <option>Institutional Consultancy</option>
+            </select>
+          </div>
+
+          <div style="margin-bottom:12px">
+            <label for="message">Message (brief) *</label>
+            <textarea id="message" name="message" required placeholder="Tell us what you need — we'll reply fast."></textarea>
+          </div>
+
+          <div class="submit-row">
+            <button type="submit" class="btn cta-primary" id="submitBtn" aria-label="Send message">
+              <span id="btnText">Send Message</span>
+              <span id="btnSpinner" style="display:none" class="spinner"></span>
+            </button>
+            <button id="btnQuickWS" type="button" class="btn btn-ws" aria-label="Quick WhatsApp"><i class="fab fa-whatsapp"></i> Quick WhatsApp</button>
+          </div>
+
+          <div id="formStatus"></div>
+        </form>
+
+        <aside class="contact-card" aria-label="Map and info">
+          <h4>Office Location</h4>
+          <p style="color:var(--muted)">Okorase State Housing, Eastern Region — Koforidua</p>
+          <p><a href="https://www.google.com/maps/search/Okorase+State+Housing+Koforidua" target="_blank" rel="noopener noreferrer" style="color:var(--gold)">View on Google Maps →</a></p>
+
+          <hr style="margin:16px 0; border:none; border-top:1px solid #eef2f6" />
+
+          <h4>Quick actions</h4>
+          <p style="margin-bottom:8px"><a class="btn btn-ws" href="https://wa.me/233598655277?text=Hello%20Melvis%20Academic%20Consult%2C%20I%20need%20urgent%20assistance." target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp"></i> WhatsApp</a></p>
+          <p style="margin-bottom:8px"><a class="btn btn-ghost" href="tel:+233543598656"><i class="fas fa-phone"></i> Call</a></p>
+          <p><a class="btn" href="mailto:melvisongod@gmail.com"><i class="fas fa-envelope"></i> Email</a></p>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <!-- floating quick-action buttons -->
+  <div class="floating-actions" aria-hidden="false">
+    <a class="floating-btn ws" href="https://wa.me/233598655277?text=Hello%20Melvis%20Academic%20Consult%2C%20I%20need%20help." target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><i class="fab fa-whatsapp" style="font-size:18px"></i></a>
+    <a class="floating-btn call" href="tel:+233543598656" aria-label="Call" title="Call"><i class="fas fa-phone" style="font-size:16px"></i></a>
+    <a class="floating-btn mail" href="mailto:melvisongod@gmail.com" aria-label="Email" title="Email"><i class="fas fa-envelope" style="font-size:14px"></i></a>
+  </div>
+
+  <!-- footer -->
+  <footer role="contentinfo">
+    <div class="container foot-inner">
+      <div>© <span id="curYear"></span> Melvis Academic Consult — All rights reserved.</div>
+      <div style="color:var(--muted)">Designed with care • Okorase State Housing, Koforidua</div>
+    </div>
+  </footer>
+
+  <!-- EmailJS SDK -->
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+  <script>
+  (function(){
+    // Configure dynamic content
+    document.getElementById('curYear').textContent = new Date().getFullYear();
+
+    // Initialize EmailJS with your credentials
+    emailjs.init('cogMB6Xhj_UY2CXtz'); // Your Public Key
+
+    // Simple reveal on intersection
+    const reveals = Array.from(document.querySelectorAll('.reveal'));
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) { e.target.classList.add('visible'); io.unobserve(e.target); }
+      });
+    }, { threshold: .12 });
+    reveals.forEach(r => io.observe(r));
+
+    // Mobile nav toggle
+    const burger = document.getElementById('burger');
+    const navLinks = document.getElementById('navLinks');
+    burger?.addEventListener('click', () => {
+      const expanded = burger.getAttribute('aria-expanded') === 'true';
+      burger.setAttribute('aria-expanded', expanded ? 'false' : 'true');
+      navLinks.classList.toggle('active');
+    });
+
+    // Smooth anchor scrolling & close mobile nav
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.addEventListener('click', (e) => {
+        const href = a.getAttribute('href');
+        if (href.length > 1) {
+          e.preventDefault();
+          const el = document.querySelector(href);
+          if (el) el.scrollIntoView({behavior:'smooth', block:'start'});
+          if (window.innerWidth < 720 && navLinks) {
+            navLinks.classList.remove('active');
+            burger.setAttribute('aria-expanded','false');
+          }
+        }
+      });
+    });
+
+    // Quick WhatsApp generator in form
+    const btnQuickWS = document.getElementById('btnQuickWS');
+    btnQuickWS?.addEventListener('click', () => {
+      const name = document.getElementById('fullname').value || 'Hello';
+      const service = document.getElementById('service').value || 'General enquiry';
+      const message = document.getElementById('message').value || '';
+      const phone = '233598655277';
+      const text = encodeURIComponent(`Hi, I'm ${name}. I need help with ${service}. ${message}`);
+      window.open(`https://wa.me/${phone}?text=${text}`, '_blank');
+    });
+
+    // Contact form handling with EmailJS
+    const form = document.getElementById('contactForm');
+    const status = document.getElementById('formStatus');
+    const submitBtn = document.getElementById('submitBtn');
+    const btnText = document.getElementById('btnText');
+    const btnSpinner = document.getElementById('btnSpinner');
+
+    form?.addEventListener('submit', function(e){
+      e.preventDefault();
+      status.innerHTML = '';
+      status.className = '';
+
+      const name = form.fullname.value.trim();
+      const email = form.email.value.trim();
+      const message = form.message.value.trim();
+      const service = form.service.value;
+
+      // Validation
+      if (!name || !email || !message) {
+        status.innerHTML = '<div class="form-message error"><i class="fas fa-exclamation-circle"></i> Please complete all required fields (name, email, message).</div>';
+        return;
+      }
+
+      // Email validation
+      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      if (!emailRegex.test(email)) {
+        status.innerHTML = '<div class="form-message error"><i class="fas fa-exclamation-circle"></i> Please enter a valid email address.</div>';
+        return;
+      }
+
+      // Disable button and show loading
+      submitBtn.disabled = true;
+      btnText.style.display = 'none';
+      btnSpinner.style.display = 'inline-block';
+
+      const templateParams = {
+        from_name: name,
+        from_email: email,
+        service_requested: service,
+        message: message,
+        to_email: 'melvisongod@gmail.com',
+        location: 'Okorase State Housing, Koforidua',
+        reply_to: email
+      };
+
+      // Send contact email using Contact Us template
+      emailjs.send('service_fpbqwn7', 'template_w3llbj9', templateParams)
+        .then(function(response) {
+          console.log('Contact email sent:', response.status);
+
+          // Send auto-reply using Auto-reply template
+          const autoReplyParams = {
+            to_name: name,
+            to_email: email,
+            service_requested: service
+          };
+
+          return emailjs.send('service_fpbqwn7', 'template_x90iija', autoReplyParams);
+        })
+        .then(function(response) {
+          console.log('Auto-reply sent:', response.status);
+          status.innerHTML = '<div class="form-message success"><i class="fas fa-check-circle"></i> Success! We received your message and sent you a confirmation email. We\'ll respond within 24 hours.</div>';
+          form.reset();
+
+          // Re-enable button
+          submitBtn.disabled = false;
+          btnText.style.display = 'inline';
+          btnSpinner.style.display = 'none';
+        })
+        .catch(function(error) {
+          console.error('EmailJS error:', error);
+          status.innerHTML = '<div class="form-message error"><i class="fas fa-exclamation-circle"></i> Message sending failed. Please contact us directly via WhatsApp or phone for immediate assistance.</div>';
+
+          // Re-enable button
+          submitBtn.disabled = false;
+          btnText.style.display = 'inline';
+          btnSpinner.style.display = 'none';
+
+          // Fallback: open WhatsApp with message
+          setTimeout(() => {
+            const text = encodeURIComponent(`${name} (${email}): ${service} - ${message}`);
+            window.open(`https://wa.me/233598655277?text=${text}`, '_blank');
+          }, 2000);
+        });
+    });
+
+    // Respect reduced motion preference
+    if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      document.documentElement.style.scrollBehavior = 'auto';
+    }
+
+    // Accessibility: keyboard focus
+    function handleFirstTab(e) {
+      if (e.key === 'Tab') {
+        document.documentElement.classList.add('user-is-tabbing');
+        window.removeEventListener('keydown', handleFirstTab);
+      }
+    }
+    window.addEventListener('keydown', handleFirstTab);
+  })();
+  </script>
+
+</body>
+</html>
