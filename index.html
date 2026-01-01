@@ -541,34 +541,35 @@
           <div class="form-row" style="margin-bottom:12px">
             <div>
               <label for="fullname">Full name *</label>
-              <input id="fullname" name="fullname" type="text" required placeholder="Your full name" />
+              <input id="fullname" name="fullname" type="text" required placeholder="Your full name" aria-required="true" />
             </div>
             <div>
               <label for="emailaddr">Email *</label>
-              <input id="emailaddr" name="email" type="email" required placeholder="you@example.com" />
+              <input id="emailaddr" name="email" type="email" required placeholder="you@example.com" aria-required="true" />
             </div>
           </div>
 
           <div style="margin-bottom:12px">
-            <label for="service">Service of interest</label>
-            <select id="service" name="service">
-              <option>Thesis & Dissertation Coaching</option>
-              <option>Proofreading & Editing</option>
-              <option>Data Analysis</option>
-              <option>Research Proposal</option>
-              <option>Workshop/Training</option>
-              <option>Institutional Consultancy</option>
+            <label for="service">Service of interest *</label>
+            <select id="service" name="service" required aria-required="true">
+              <option value="">-- Select a service --</option>
+              <option value="Thesis & Dissertation Coaching">Thesis & Dissertation Coaching</option>
+              <option value="Proofreading & Editing">Proofreading & Editing</option>
+              <option value="Data Analysis">Data Analysis</option>
+              <option value="Research Proposal">Research Proposal</option>
+              <option value="Workshop/Training">Workshop/Training</option>
+              <option value="Institutional Consultancy">Institutional Consultancy</option>
             </select>
           </div>
 
           <div style="margin-bottom:12px">
             <label for="message">Message (brief) *</label>
-            <textarea id="message" name="message" required placeholder="Tell us what you need — we'll reply fast."></textarea>
+            <textarea id="message" name="message" required placeholder="Tell us what you need — we'll reply fast." aria-required="true"></textarea>
           </div>
 
           <div class="submit-row">
             <button type="submit" class="btn cta-primary" id="submitBtn" aria-label="Send message">
-              <span id="btnText">Send Message</span>
+              <span id="btnText"><i class="fas fa-paper-plane"></i> Send Message</span>
               <span id="btnSpinner" style="display:none" class="spinner"></span>
             </button>
             <button id="btnQuickWS" type="button" class="btn btn-ws" aria-label="Quick WhatsApp"><i class="fab fa-whatsapp"></i> Quick WhatsApp</button>
@@ -679,11 +680,11 @@
       const name = form.fullname.value.trim();
       const email = form.email.value.trim();
       const message = form.message.value.trim();
-      const service = form.service.value;
+      const service = form.service.value.trim();
 
       // Validation
-      if (!name || !email || !message) {
-        status.innerHTML = '<div class="form-message error"><i class="fas fa-exclamation-circle"></i> Please complete all required fields (name, email, message).</div>';
+      if (!name || !email || !message || !service) {
+        status.innerHTML = '<div class="form-message error"><i class="fas fa-exclamation-circle"></i> Please complete all required fields including service selection.</div>';
         return;
       }
 
@@ -696,8 +697,7 @@
 
       // Disable button and show loading
       submitBtn.disabled = true;
-      btnText.style.display = 'none';
-      btnSpinner.style.display = 'inline-block';
+      btnText.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
 
       const templateParams = {
         from_name: name,
@@ -713,27 +713,25 @@
       // Send contact email - single email only
       emailjs.send('service_fpbqwn7', 'template_w3llbj9', templateParams)
         .then(function(response) {
-          console.log('Contact email sent:', response.status);
-          status.innerHTML = '<div class="form-message success"><i class="fas fa-check-circle"></i> Success! Your message has been sent. We\'ll respond within 24 hours via email or WhatsApp.</div>';
+          console.log('✅ Email sent successfully:', response.status);
+          status.innerHTML = '<div class="form-message success"><i class="fas fa-check-circle"></i> <strong>Success!</strong> Your inquiry for <strong>' + service + '</strong> has been sent. We\'ll respond within 24 hours via email or WhatsApp.</div>';
           form.reset();
 
           // Re-enable button
           submitBtn.disabled = false;
-          btnText.style.display = 'inline';
-          btnSpinner.style.display = 'none';
+          btnText.innerHTML = '<i class="fas fa-paper-plane"></i> Send Message';
         })
         .catch(function(error) {
-          console.error('EmailJS error:', error);
-          status.innerHTML = '<div class="form-message error"><i class="fas fa-exclamation-circle"></i> Message sending failed. Please contact us directly via WhatsApp or phone for immediate assistance.</div>';
+          console.error('❌ EmailJS error:', error);
+          status.innerHTML = '<div class="form-message error"><i class="fas fa-exclamation-circle"></i> <strong>Message sending failed.</strong> Please contact us directly via WhatsApp or phone for immediate assistance.</div>';
 
           // Re-enable button
           submitBtn.disabled = false;
-          btnText.style.display = 'inline';
-          btnSpinner.style.display = 'none';
+          btnText.innerHTML = '<i class="fas fa-paper-plane"></i> Send Message';
 
           // Fallback: open WhatsApp with message
           setTimeout(() => {
-            const text = encodeURIComponent(`${name} (${email}): ${service} - ${message}`);
+            const text = encodeURIComponent(`Hi, I'm ${name} (${email}). I need help with ${service}. ${message}`);
             window.open(`https://wa.me/233598655277?text=${text}`, '_blank');
           }, 2000);
         });
