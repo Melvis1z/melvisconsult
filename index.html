@@ -706,26 +706,15 @@
         message: message,
         to_email: 'melvisongod@gmail.com',
         location: 'Okorase State Housing, Koforidua',
-        reply_to: email
+        reply_to: email,
+        subject: `New Inquiry: ${service}`
       };
 
-      // Send contact email using Contact Us template
+      // Send contact email - single email only
       emailjs.send('service_fpbqwn7', 'template_w3llbj9', templateParams)
         .then(function(response) {
           console.log('Contact email sent:', response.status);
-
-          // Send auto-reply using Auto-reply template
-          const autoReplyParams = {
-            to_name: name,
-            to_email: email,
-            service_requested: service
-          };
-
-          return emailjs.send('service_fpbqwn7', 'template_x90iija', autoReplyParams);
-        })
-        .then(function(response) {
-          console.log('Auto-reply sent:', response.status);
-          status.innerHTML = '<div class="form-message success"><i class="fas fa-check-circle"></i> Success! We received your message and sent you a confirmation email. We\'ll respond within 24 hours.</div>';
+          status.innerHTML = '<div class="form-message success"><i class="fas fa-check-circle"></i> Success! Your message has been sent. We\'ll respond within 24 hours via email or WhatsApp.</div>';
           form.reset();
 
           // Re-enable button
