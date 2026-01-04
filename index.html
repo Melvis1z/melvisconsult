@@ -127,6 +127,26 @@
     .feature-list{ padding-left:0; margin:16px 0 0; color:var(--muted); font-size:.95rem }
     .feature-list li{ margin:10px 0; display:flex; gap:10px; align-items:flex-start }
 
+    /* Mission, Vision, Values Section */
+    .mvv-section{ background:linear-gradient(135deg, #f0f9ff, #e0f2fe); padding:60px 0; margin:40px 0 }
+    .mvv-grid{ display:grid; grid-template-columns:repeat(auto-fit, minmax(320px, 1fr)); gap:28px; margin-top:32px }
+    .mvv-card{ background:white; padding:32px; border-radius:16px; box-shadow:0 12px 40px rgba(2,6,23,0.1); transition:all 0.3s ease; border:2px solid transparent; position:relative; overflow:hidden }
+    .mvv-card::before{ content:''; position:absolute; top:0; left:0; right:0; height:5px; background:linear-gradient(90deg, var(--gold), var(--accent)); opacity:0; transition:opacity 0.3s ease }
+    .mvv-card:hover{ transform:translateY(-8px); box-shadow:0 20px 60px rgba(2,6,23,0.18); border-color:var(--gold) }
+    .mvv-card:hover::before{ opacity:1 }
+    .mvv-icon{ width:64px; height:64px; background:linear-gradient(135deg, var(--gold), #d4a853); border-radius:50%; display:flex; align-items:center; justify-content:center; margin-bottom:20px; box-shadow:0 8px 24px rgba(198,155,61,0.3) }
+    .mvv-icon i{ font-size:28px; color:white }
+    .mvv-card h3{ color:var(--navy-2); font-size:1.4rem; margin-bottom:16px; font-family:'Playfair Display', serif }
+    .mvv-card p{ color:var(--muted); line-height:1.8; font-size:1.02rem }
+
+    /* Core Values Grid */
+    .values-grid{ display:grid; grid-template-columns:repeat(auto-fit, minmax(260px, 1fr)); gap:20px; margin-top:28px }
+    .value-item{ background:white; padding:24px; border-radius:12px; box-shadow:0 8px 24px rgba(2,6,23,0.08); transition:all 0.3s ease; border-left:4px solid var(--gold) }
+    .value-item:hover{ transform:translateX(8px); box-shadow:0 12px 32px rgba(2,6,23,0.14) }
+    .value-item h4{ color:var(--navy-2); font-size:1.1rem; margin-bottom:10px; display:flex; align-items:center; gap:10px }
+    .value-item h4 i{ color:var(--gold); font-size:20px }
+    .value-item p{ color:var(--muted); font-size:0.96rem; line-height:1.7 }
+
     /* Value strip */
     .value-strip{ background:linear-gradient(90deg, rgba(6,18,40,1), rgba(7,32,70,0.97)); color:white; padding:28px; border-radius:14px; display:flex; gap:24px; align-items:center; justify-content:space-between; margin-top:28px; border:1px solid rgba(255,255,255,0.08); flex-wrap:wrap; box-shadow:0 12px 40px rgba(0,0,0,0.2) }
     .value-items{ display:flex; gap:24px; flex-wrap:wrap; justify-content:center }
@@ -248,6 +268,8 @@
       .hero-title{ font-size:1.5rem }
       .contact-pill{ padding:6px 10px; gap:6px; font-size:0.82rem }
       .cards{ grid-template-columns:1fr }
+      .mvv-grid{ grid-template-columns:1fr }
+      .values-grid{ grid-template-columns:1fr }
     }
 
     /* reduced motion */
@@ -304,6 +326,7 @@
 
         <div class="nav-links" id="navLinks" role="menubar">
           <a href="#hero" role="menuitem">Home</a>
+          <a href="#mission" role="menuitem">Mission & Vision</a>
           <a href="#services" role="menuitem">Services</a>
           <a href="#why" role="menuitem">Why Choose Us</a>
           <a href="#about" role="menuitem">About</a>
@@ -388,6 +411,77 @@
         <div class="stat-card">
           <div class="stat-number">8+</div>
           <div class="stat-label">Years Experience</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MISSION, VISION & VALUES -->
+    <section id="mission" class="mvv-section" aria-labelledby="mvv-heading">
+      <div class="container">
+        <div class="section-head reveal">
+          <div class="section-title" id="mvv-heading">Our Mission, Vision & Core Values</div>
+          <div style="color:var(--muted); margin-top:12px; max-width:720px; margin-left:auto; margin-right:auto; text-align:center">
+            Driven by purpose, guided by excellence, and committed to transforming academic research across Africa and beyond.
+          </div>
+        </div>
+
+        <div class="mvv-grid">
+          <div class="mvv-card reveal">
+            <div class="mvv-icon">
+              <i class="fas fa-bullseye"></i>
+            </div>
+            <h3>Our Mission</h3>
+            <p>To empower students, researchers, and institutions with high-quality, evidence-based academic support services that uphold rigorous standards, foster scholarly excellence, and advance knowledge creation across disciplines. We are committed to delivering ethical, confidential, and impactful research solutions that enable our clients to achieve their academic and professional goals with confidence.</p>
+          </div>
+
+          <div class="mvv-card reveal">
+            <div class="mvv-icon">
+              <i class="fas fa-eye"></i>
+            </div>
+            <h3>Our Vision</h3>
+            <p>To be the leading academic research consulting firm in Ghana and West Africa, recognized for our unwavering commitment to scholarly rigor, client success, and ethical research practice. We envision a future where every student and researcher has access to professional guidance that transforms their academic journey and contributes meaningfully to global knowledge advancement.</p>
+          </div>
+
+          <div class="mvv-card reveal">
+            <div class="mvv-icon">
+              <i class="fas fa-gem"></i>
+            </div>
+            <h3>Core Values</h3>
+            <p>Our work is anchored in five fundamental principles that guide every client engagement and shape our organizational culture. These values define who we are and how we serve our clients.</p>
+          </div>
+        </div>
+
+        <!-- Core Values Detailed -->
+        <div class="values-grid reveal" style="margin-top:40px">
+          <div class="value-item">
+            <h4><i class="fas fa-shield-alt"></i> Academic Integrity</h4>
+            <p>We uphold the highest standards of ethical research practice, ensuring all work is original, properly cited, and aligned with academic honesty principles.</p>
+          </div>
+
+          <div class="value-item">
+            <h4><i class="fas fa-star"></i> Excellence</h4>
+            <p>We pursue exceptional quality in every deliverable, combining scholarly depth with practical insight to exceed client expectations consistently.</p>
+          </div>
+
+          <div class="value-item">
+            <h4><i class="fas fa-user-lock"></i> Confidentiality</h4>
+            <p>We maintain strict confidentiality in all client engagements, protecting intellectual property and personal information with professional discretion.</p>
+          </div>
+
+          <div class="value-item">
+            <h4><i class="fas fa-comments"></i> Client-Centered Service</h4>
+            <p>We prioritize responsive communication, personalized support, and genuine partnership in every interaction, treating each client's success as our own.</p>
+          </div>
+
+          <div class="value-item">
+            <h4><i class="fas fa-graduation-cap"></i> Continuous Learning</h4>
+            <p>We embrace ongoing professional development, staying current with research methodologies, analytical tools, and academic standards to deliver cutting-edge support.</p>
+          </div>
+
+          <div class="value-item">
+            <h4><i class="fas fa-balance-scale"></i> Social Responsibility</h4>
+            <p>We contribute to capacity building and knowledge democratization, making quality research support accessible to diverse academic communities.</p>
+          </div>
         </div>
       </div>
     </section>
@@ -526,7 +620,7 @@ Serving clients across Ghana and internationally, we are committed to confidenti
               <div class="role">Lead Consultant & Founder</div>
               <p>Elvis Mensah is the Founder and Lead Consultant of Melvis Academic Consult, bringing strong expertise in academic research, data analysis, and research supervision. He holds an MBA in Finance from the University of Ghana and is a certified Financial Modeling & Valuation Analyst (FMVA®), with advanced training in Business Intelligence & Analytics and Data Annotation.
 
-With extensive experience supporting undergraduate, master’s, and PhD candidates, Elvis has guided numerous research projects from concept development through final defense. His work spans proposal development, methodology design, quantitative and qualitative data analysis, and academic writing support, consistently aligned with institutional and international academic standards.
+With extensive experience supporting undergraduate, master's, and PhD candidates, Elvis has guided numerous research projects from concept development through final defense. His work spans proposal development, methodology design, quantitative and qualitative data analysis, and academic writing support, consistently aligned with institutional and international academic standards.
 
 As Lead Consultant, he provides strategic oversight across all engagements, ensuring methodological rigor, ethical research practice, and high-quality, defensible outputs. His approach combines scholarly discipline with practical insight, enabling clients to achieve academic excellence and research outcomes that are both credible and impactful.</p>
             </div>
@@ -633,13 +727,9 @@ As Lead Consultant, he provides strategic oversight across all engagements, ensu
 
   <script>
   (function(){
-    // Configure dynamic content
     document.getElementById('curYear').textContent = new Date().getFullYear();
-
-    // Initialize EmailJS with your credentials
     emailjs.init('cogMB6Xhj_UY2CXtz');
 
-    // Simple reveal on intersection
     const reveals = Array.from(document.querySelectorAll('.reveal'));
     const io = new IntersectionObserver((entries) => {
       entries.forEach(e => {
@@ -648,7 +738,6 @@ As Lead Consultant, he provides strategic oversight across all engagements, ensu
     }, { threshold: .12 });
     reveals.forEach(r => io.observe(r));
 
-    // Mobile nav toggle
     const burger = document.getElementById('burger');
     const navLinks = document.getElementById('navLinks');
     burger?.addEventListener('click', () => {
@@ -657,7 +746,6 @@ As Lead Consultant, he provides strategic oversight across all engagements, ensu
       navLinks.classList.toggle('active');
     });
 
-    // Smooth anchor scrolling & close mobile nav
     document.querySelectorAll('a[href^="#"]').forEach(a => {
       a.addEventListener('click', (e) => {
         const href = a.getAttribute('href');
@@ -673,7 +761,6 @@ As Lead Consultant, he provides strategic oversight across all engagements, ensu
       });
     });
 
-    // Quick WhatsApp generator in form
     const btnQuickWS = document.getElementById('btnQuickWS');
     btnQuickWS?.addEventListener('click', () => {
       const name = document.getElementById('fullname').value || 'Hello';
@@ -684,7 +771,6 @@ As Lead Consultant, he provides strategic oversight across all engagements, ensu
       window.open(`https://wa.me/${phone}?text=${text}`, '_blank');
     });
 
-    // Contact form handling with EmailJS
     const form = document.getElementById('contactForm');
     const status = document.getElementById('formStatus');
     const submitBtn = document.getElementById('submitBtn');
@@ -700,20 +786,17 @@ As Lead Consultant, he provides strategic oversight across all engagements, ensu
       const message = form.message.value.trim();
       const service = form.service.value.trim();
 
-      // Validation
       if (!name || !email || !message || !service) {
         status.innerHTML = '<div class="form-message error"><i class="fas fa-exclamation-circle"></i> Please complete all required fields including service selection.</div>';
         return;
       }
 
-      // Email validation
       const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
       if (!emailRegex.test(email)) {
         status.innerHTML = '<div class="form-message error"><i class="fas fa-exclamation-circle"></i> Please enter a valid email address.</div>';
         return;
       }
 
-      // Disable button and show loading
       submitBtn.disabled = true;
       btnText.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
 
@@ -728,7 +811,6 @@ As Lead Consultant, he provides strategic oversight across all engagements, ensu
         subject: `New Inquiry: ${service}`
       };
 
-      // Send contact email
       emailjs.send('service_fpbqwn7', 'template_w3llbj9', templateParams)
         .then(function(response) {
           console.log('✅ Email sent successfully:', response.status);
@@ -743,7 +825,6 @@ As Lead Consultant, he provides strategic oversight across all engagements, ensu
           submitBtn.disabled = false;
           btnText.innerHTML = '<i class="fas fa-paper-plane"></i> Send Message';
 
-          // Fallback: open WhatsApp with message
           setTimeout(() => {
             const text = encodeURIComponent(`Hi, I'm ${name} (${email}). I need help with ${service}. ${message}`);
             window.open(`https://wa.me/233598655277?text=${text}`, '_blank');
@@ -751,12 +832,10 @@ As Lead Consultant, he provides strategic oversight across all engagements, ensu
         });
     });
 
-    // Respect reduced motion preference
     if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
       document.documentElement.style.scrollBehavior = 'auto';
     }
 
-    // Accessibility: keyboard focus
     function handleFirstTab(e) {
       if (e.key === 'Tab') {
         document.documentElement.classList.add('user-is-tabbing');
@@ -769,4 +848,3 @@ As Lead Consultant, he provides strategic oversight across all engagements, ensu
 
 </body>
 </html>
-
